@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ATM Consultoria</string>
+    <string name="empresa_detalhes">Sobre a empresa</string>
+    <string name="loreipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia turpis tellus. Fusce at mattis tellus. Nam vitae sapien magna. Nulla ullamcorper lorem et mi imperdiet feugiat. Mauris enim lacus, rutrum vitae sapien ut, iaculis rutrum risus. Phasellus eget nisl vitae nulla lacinia dictum. Phasellus semper elit non convallis aliquet. Cras eu volutpat mauris. Proin finibus congue metus, nec tristique justo fringilla et. Mauris augue odio, malesuada ut vestibulum a, laoreet a diam. Proin venenatis urna sed consequat varius. Vestibulum vitae libero vel quam aliquet viverra vitae a quam. Nunc convallis at nisl at dapibus. Curabitur dignissim tellus id velit lobortis, eu porta metus lobortis. Etiam sit amet enim condimentum, lobortis nisi nec, pellentesque ligula.</string>
 </resources>
