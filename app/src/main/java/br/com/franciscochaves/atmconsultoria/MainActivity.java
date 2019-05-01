@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView mBotaoEmpresa;
     private ImageView mBotaoServico;
+    private ImageView mBotaoCliente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         mBotaoEmpresa = findViewById(R.id.image_empresa);
         mBotaoServico = findViewById(R.id.image_servicos);
+        mBotaoCliente = findViewById(R.id.image_clientes);
 
         mBotaoEmpresa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mBotaoCliente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ClienteActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
