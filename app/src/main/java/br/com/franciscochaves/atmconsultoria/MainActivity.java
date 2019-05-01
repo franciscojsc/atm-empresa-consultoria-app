@@ -9,6 +9,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView mBotaoEmpresa;
+    private ImageView mBotaoServico;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +17,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mBotaoEmpresa = findViewById(R.id.image_empresa);
+        mBotaoServico = findViewById(R.id.image_servicos);
 
         mBotaoEmpresa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EmpresaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBotaoServico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ServicoActivity.class);
                 startActivity(intent);
             }
         });
