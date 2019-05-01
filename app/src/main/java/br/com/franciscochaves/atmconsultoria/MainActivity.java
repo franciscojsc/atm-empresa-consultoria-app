@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView mBotaoEmpresa;
     private ImageView mBotaoServico;
     private ImageView mBotaoCliente;
+    private ImageView mBotaoContato;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         mBotaoEmpresa = findViewById(R.id.image_empresa);
         mBotaoServico = findViewById(R.id.image_servicos);
         mBotaoCliente = findViewById(R.id.image_clientes);
+        mBotaoContato = findViewById(R.id.image_contato);
 
         mBotaoEmpresa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,5 +47,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mBotaoContato.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ContatoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
